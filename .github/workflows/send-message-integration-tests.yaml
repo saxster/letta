@@ -1,11 +1,7 @@
 name: Send Message SDK Tests
 on:
-  pull_request_target:
-    # branches: [main] # TODO: uncomment before merge
-    types: [labeled]
-    paths:
-      - 'letta/**'
-
+  push:
+    branches: [main]
 jobs:
   send-messages:
     # Only run when the "safe to test" label is applied
