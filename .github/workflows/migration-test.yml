@@ -1,8 +1,7 @@
 name: Alembic Migration Tester
 on:
-  pull_request:
-    paths:
-      - '**.py'
+  push:
+    branches: [main]
   workflow_dispatch:
 jobs:
   test:
