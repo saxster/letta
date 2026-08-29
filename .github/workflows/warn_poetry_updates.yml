@@ -1,11 +1,8 @@
 name: Check Poetry Dependencies Changes
 
 on:
-  pull_request:
-    paths:
-      - 'poetry.lock'
-      - 'pyproject.toml'
-
+  push:
+    branches: [main]
 jobs:
   check-poetry-changes:
     runs-on: ubuntu-latest
