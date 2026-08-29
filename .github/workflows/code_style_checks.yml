@@ -3,9 +3,6 @@ name: Code Style Checks
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
 jobs:
   style-checks:
     runs-on: ubuntu-latest
